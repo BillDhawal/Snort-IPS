@@ -57,13 +57,10 @@ sudo mkdir /var/log/snort
 sudo chown snort:snort /var/log/snort
 
 sudo mkdir -p /etc/snort
+tar -xvfz $workingDir/snortrules-snapshot-2976.tar.gz -C /etc/snort
 sudo touch /etc/snort/rules/white_list.rules
 sudo touch /etc/snort/rules/black_list.rules
 sudo mkdir /usr/local/lib/snort_dynamicrules
-
-
-wget https://www.snort.org/rules/community
-tar -xvfz community.tar.gz -C /etc/snort/rules
 
 sudo chown -R snort:snort /etc/snort/*
 sudo mv /etc/snort/etc/* /etc/snort

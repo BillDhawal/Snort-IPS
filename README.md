@@ -1,1 +1,1 @@
-# Snort-IDS
+# Snort-IPS
