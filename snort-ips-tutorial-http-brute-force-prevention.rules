@@ -1,0 +1,6 @@
+#Kevin Hutton
+#Dennis Hutton
+#December 2015
+#Snort IPS Tutorial
+
+alert tcp !$HOME_NET any -> 192.168.248.3 80 (msg:"Login attempt on webserver"; content:"Authorization";sid:1000990) 
